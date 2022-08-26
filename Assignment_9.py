@@ -18,33 +18,21 @@ while(i>=j):
     print(i)
     i=i-1
 #4. Write a python script to print first N odd natural numbers
-j=1
 i=eval(input("How many first N odd natural numbers want to print:-"))
-while(j<=i):
-    if(j%2==1):
-        print(j)
-    j=j+1
+for a in range(1,2*i,2):
+    print(a, end=" ")
 #5. Write a python script to print first N odd natural numbers in reverse order
-j=1
 i=eval(input("How many first N odd natural numbers want to print in reverse order:-"))
-while(i>=j):
-    if(i%2==1):
-        print(i)
-    i=i-1 
+for j in range(2*n-1,0,-1):
+    print(i,end=" ")
 #6. Write a python script to print first N even natural numbers
-j=1
 i=eval(input("How many first N even natural numbers want to print:-"))
-while(j<=i):
-    if(j%2==0):
-        print(j)
-    j=j+1
+for a in range(2,i*2+1,2):
+    print(a, end=" ")
 #7. Write a python script to print first N even natural numbers in reverse order
-j=1
 i=eval(input("How many first N even natural numbers want to print in reverse order:-"))
-while(i>=j):
-    if(i%2==1):
-        print(i)
-    i=i-1
+for a in range(2*i,1,-2):
+    print(a, end=" ")
 #8. Write a python script to print squares of first N natural numbers
 j=1
 i=eval(input("How many first N natural numbers squares you want to print:-"))
